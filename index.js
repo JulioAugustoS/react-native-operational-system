@@ -1,78 +1,78 @@
 // original: https://github.com/CoderPuppy/os-browserify
-var {DeviceEventEmitter, NativeModules, Platform} = require('react-native');
-var RNOS = NativeModules.RNOS;
+var { DeviceEventEmitter, NativeModules, Platform } = require("react-native");
+var RNOPERATIONALSYSTEM = NativeModules.RNOPERATIONALSYSTEM;
 
 // update the osInfo
 var osInfo = {};
-DeviceEventEmitter.addListener('rn-os-info', function(info) {
+DeviceEventEmitter.addListener("rn-operational-system-info", function (info) {
   osInfo = info;
 });
 
-exports.endianness = function() {
-  return 'LE';
+exports.endianness = function () {
+  return "LE";
 };
 
-exports.hostname = function() {
-  if (typeof location !== 'undefined') {
+exports.hostname = function () {
+  if (typeof location !== "undefined") {
     return location.hostname;
   } else {
-    return '';
+    return "";
   }
 };
 
-exports.loadavg = function() {
+exports.loadavg = function () {
   return [];
 };
 
-exports.uptime = function() {
+exports.uptime = function () {
   return 0;
 };
 
-exports.freemem = function() {
+exports.freemem = function () {
   return Number.MAX_VALUE;
 };
 
-exports.totalmem = function() {
+exports.totalmem = function () {
   return Number.MAX_VALUE;
 };
 
-exports.cpus = function() {
+exports.cpus = function () {
   return [];
 };
 
-exports.type = function() {
-  return 'React Native';
+exports.type = function () {
+  return "React Native";
 };
 
-exports.release = function() {
-  if (typeof navigator !== 'undefined') {
+exports.release = function () {
+  if (typeof navigator !== "undefined") {
     return navigator.appVersion;
   }
-  return '';
+  return "";
 };
 
-exports.networkInterfaces = exports.getNetworkInterfaces = function() {
-  return osInfo.networkInterfaces || RNOS.networkInterfaces;
+exports.networkInterfaces = exports.getNetworkInterfaces = function () {
+  return osInfo.networkInterfaces || RNOPERATIONALSYSTEM.networkInterfaces;
 };
 
-exports.arch = function() {
-  return 'javascript';
+exports.arch = function () {
+  return "javascript";
 };
 
-exports.platform = function() {
+exports.platform = function () {
   return Platform.OS;
 };
 
-exports.tmpdir = exports.tmpDir = function() {
-  return '/tmp';
-};
-
-exports.homedir = function() {
-  return RNOS.homedir;
+exports.tmpdir = exports.tmpDir = function () {
+  return "/tmp";
 };
 
 exports.homedir = function () {
-    return RNOS.homedir;
+  return RNOPERATIONALSYSTEM.homedir;
 };
 
-exports.EOL = '\n';
+exports.homedir = function () {
+  return RNOPERATIONALSYSTEM.homedir;
+};
+
+exports.EOL = "\n";

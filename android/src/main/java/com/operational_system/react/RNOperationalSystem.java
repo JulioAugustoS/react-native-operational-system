@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2015-present, Peel Technologies, Inc.
+ * Copyright (c) 2022, Julio Sousa.
  * All rights reserved.
  */
 
-package com.peel.react.rnos;
+package com.operational_system.react.rnoperationalsystem;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -32,12 +32,12 @@ import java.util.Locale;
 import java.util.Map;
 
 
-public final class RNOS extends ReactContextBaseJavaModule implements LifecycleEventListener {
-    /* package */ static final String TAG = "RNOS";
+public final class RNOperationalSystem extends ReactContextBaseJavaModule implements LifecycleEventListener {
+    /* package */ static final String TAG = "RNOPERATIONALSYSTEM";
     /* package */ final ConnectivityManager mConnectivityManager;
     /* package */ final ConnectivityBroadcastReceiver mConnectivityBroadcastReceiver;
 
-    public RNOS(ReactApplicationContext reactContext) {
+    public RNOperationalSystem(ReactApplicationContext reactContext) {
         super(reactContext);
         mConnectivityManager =
                 (ConnectivityManager) reactContext.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -114,7 +114,7 @@ public final class RNOS extends ReactContextBaseJavaModule implements LifecycleE
         final ReactContext reactContext = getReactApplicationContext();
         reactContext
                 .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
-                .emit("rn-os-info", Arguments.fromBundle(osInfo));
+                .emit("rn-operational-system-info", Arguments.fromBundle(osInfo));
     }
 
     private Bundle getNetworkInterfaces() throws SocketException {

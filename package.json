@@ -1,38 +1,37 @@
 {
-  "name": "react-native-os",
-  "version": "1.2.7",
-  "description": "node's os module for react-native",
+  "name": "react-native-operational-system",
+  "version": "1.0.0",
+  "description": "Node's os module for react-native",
   "main": "index.js",
+  "author": {
+    "name": "Julio Sousa",
+    "email": "julioaugustoms@gmail.com"
+  },
   "scripts": {
     "start": "exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aprock/react-native-os"
+    "url": "https://github.com/JulioAugustoS/react-native-operational-system"
   },
   "bundleDependencies": false,
   "deprecated": false,
-  "description": "node's os module for react-native",
-  "devDependencies": {
-    "babel-eslint": "^10.0.3",
-    "eslint-plugin-react": "^3.11.3"
-  },
-  "homepage": "https://github.com/aprock/react-native-os",
+  "homepage": "https://github.com/JulioAugustoS/react-native-operational-system",
   "keywords": [
     "react-component",
     "reactnative",
     "react-native",
     "os",
+    "operational-system",
     "ios",
     "android"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aprock/react-native-os/issues"
+    "url": "https://github.com/JulioAugustoS/react-native-operational-system/issues"
   },
-  "homepage": "https://github.com/aprock/react-native-os",
   "devDependencies": {
-    "babel-eslint": "^4.1.6",
+    "babel-eslint": "^10.0.3",
     "eslint-plugin-react": "^3.11.3"
   }
 }

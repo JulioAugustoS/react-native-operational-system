@@ -1,12 +1,12 @@
 //
-//  RNOS.m
-//  RNOS
+//  RNOPERATIONALSYSTEM.m
+//  RNOPERATIONALSYSTEM
 //
-//  Created by Andy Prock on 11/3/16.
-//  Copyright © 2016 Peel. All rights reserved.
+//  Created by Julio Sousa on 22/09/2022.
+//  Copyright © 2022 Julio Sousa. All rights reserved.
 //
 
-#import "RNOS.h"
+#import "RNOPERATIONALSYSTEM.h"
 
 #import "RCTAssert.h"
 
@@ -16,7 +16,7 @@
 #include <net/if_dl.h>
 
 
-@implementation RNOS {
+@implementation RNOPERATIONALSYSTEM {
     SCNetworkReachabilityRef _reachability;
 }
 
@@ -26,10 +26,10 @@ RCT_EXPORT_MODULE()
 
 static void RCTReachabilityCallback(__unused SCNetworkReachabilityRef target, SCNetworkReachabilityFlags flags, void *info)
 {
-    RNOS *self = (__bridge id)info;
+    RNOPERATIONALSYSTEM *self = (__bridge id)info;
 
     // update the info on network changes
-    [self.bridge.eventDispatcher sendDeviceEventWithName:@"rn-os-info"
+    [self.bridge.eventDispatcher sendDeviceEventWithName:@"rn-operational-system-info"
                                                     body:@{ @"networkInterfaces": [self networkInterfaces] }];
 }
 

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		73D9377D1AFF9EBE00450142 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9377C1AFF9EBE00450142 /* CFNetwork.framework */; };
-		96B009231DCD3BF1001CBF3A /* RNOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B009221DCD3BF1001CBF3A /* RNOS.m */; };
+		96B009231DCD3BF1001CBF3A /* RNOPERATIONALSYSTEM.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B009221DCD3BF1001CBF3A /* RNOPERATIONALSYSTEM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libRNOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		134814201AA4EA6300B7C361 /* libRNOPERATIONALSYSTEM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNOPERATIONALSYSTEM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D9377C1AFF9EBE00450142 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		96B009211DCD3BF1001CBF3A /* RNOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOS.h; sourceTree = "<group>"; };
-		96B009221DCD3BF1001CBF3A /* RNOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOS.m; sourceTree = "<group>"; };
+		96B009211DCD3BF1001CBF3A /* RNOPERATIONALSYSTEM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOPERATIONALSYSTEM.h; sourceTree = "<group>"; };
+		96B009221DCD3BF1001CBF3A /* RNOPERATIONALSYSTEM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOPERATIONALSYSTEM.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libRNOS.a */,
+				134814201AA4EA6300B7C361 /* libRNOPERATIONALSYSTEM.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,8 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				73D9377C1AFF9EBE00450142 /* CFNetwork.framework */,
-				96B009211DCD3BF1001CBF3A /* RNOS.h */,
-				96B009221DCD3BF1001CBF3A /* RNOS.m */,
+				96B009211DCD3BF1001CBF3A /* RNOPERATIONALSYSTEM.h */,
+				96B009221DCD3BF1001CBF3A /* RNOPERATIONALSYSTEM.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,9 +63,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* RNOS */ = {
+		58B511DA1A9E6C8500147676 /* RNOPERATIONALSYSTEM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNOS" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNOPERATIONALSYSTEM" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -75,9 +75,9 @@
 			);
 			dependencies = (
 			);
-			name = RNOS;
+			name = RNOPERATIONALSYSTEM;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libRNOS.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libRNOPERATIONALSYSTEM.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -94,7 +94,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNOS" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNOPERATIONALSYSTEM" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -106,7 +106,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* RNOS */,
+				58B511DA1A9E6C8500147676 /* RNOPERATIONALSYSTEM */,
 			);
 		};
 /* End PBXProject section */
@@ -116,7 +116,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96B009231DCD3BF1001CBF3A /* RNOS.m in Sources */,
+				96B009231DCD3BF1001CBF3A /* RNOPERATIONALSYSTEM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +208,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNOS;
+				PRODUCT_NAME = RNOPERATIONALSYSTEM;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -224,7 +224,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNOS;
+				PRODUCT_NAME = RNOPERATIONALSYSTEM;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -233,7 +233,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNOS" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNOPERATIONALSYSTEM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -242,7 +242,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNOS" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNOPERATIONALSYSTEM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,

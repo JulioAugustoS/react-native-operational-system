@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2015-present, Peel Technologies, Inc.
+ * Copyright (c) 2022, Julio Sousa.
  * All rights reserved.
  */
 
-package com.peel.react.rnos;
+package com.operational_system.react.rnoperationalsystem;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
@@ -16,14 +16,14 @@ import java.util.Collections;
 import java.util.List;
 
 
-public final class RNOSModule implements ReactPackage {
+public final class RNOperationalSystemModule implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(
             ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<NativeModule>();
 
-        modules.add(new RNOS(reactContext));
+        modules.add(new RNOperationalSystem(reactContext));
 
         return modules;
     }
